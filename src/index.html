@@ -1,0 +1,177 @@
+<!doctype html>
+<html dir="ltr" lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Artificial Intelligence HTML Template, html template, tailwindcss, Aivora - Artificial Intelligence HTML Template"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo1.png"
+      type="image/x-icon"
+    />
+    <title>Phone Hunter - HTML Template</title>
+    <!-- daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <!-- header section start -->
+    <header class="bg-primary py-6">
+      <div class="container">
+        <div class="flex justify-between items-center">
+          <div class="">
+            <a href="#">
+              <h4 class="text-nu30 font-bold">Hot Gadgets</h4>
+            </a>
+          </div>
+          <div class="">
+            <button
+              class="px-6 py-2 rounded-lg bg-nu10 text-secondary1 font-semibold"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- button props -->
+      <div
+        id="test-popup"
+        class="white-popup mfp-with-anim mfp-hide bg-nu7 px-8 py-8 rounded-3xl"
+      >
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni nihil
+          sequi ut officiis cupiditate molestias nostrum dolore laborum!
+          Facilis, corrupti?
+        </p>
+      </div>
+    </header>
+    <!-- header section end -->
+    <!-- hero section start -->
+    <section class="bg-primary pt-20">
+      <div class="container">
+        <div class="">
+          <div class="text-center mb-10">
+            <h1 class="display-4 text-nu30 mb-6">Apple Iphone 13 Pro Max</h1>
+            <p class="text-nu30 mb-8">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority <br />
+              have suffered alteration in some form, by injected humou.
+            </p>
+            <div class="">
+              <button
+                class="px-6 py-2 rounded-lg bg-nu10 text-secondary1 font-semibold"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+          <div class="">
+            <img class="w-full" src="./assets/images/phone-hero.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+    <!-- Search item section start -->
+    <section class="bg-primary py-20">
+      <div class="container">
+        <div class="">
+          <div class="mb-12">
+            <h3 class="text-nu30 text-center mb-10">Search your phone</h3>
+            <div class="flex justify-center items-center">
+              <div class="flex items-center bg-nu40 rounded-2xl">
+                <span
+                  ><i class="text-nu30 px-3 py-3 ph ph-magnifying-glass"></i
+                ></span>
+                <input
+                  id="search-input"
+                  type="text"
+                  class="placeholder:text-nu30 text-nu30 border-none outline-none"
+                  placeholder="Search your phone"
+                />
+                <button
+                  onclick="searchInput()"
+                  class="px-6 py-2 rounded-lg bg-nu10 text-secondary1 font-semibold"
+                >
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="py-10">
+              <div id="is-loader" class="flex justify-center items-center">
+                <div
+                  class="flex justify-center items-center w-[100px] h-[100px] gap-[6px]"
+                >
+                  <span
+                    class="w-[4px] h-[50px] animate-scale"
+                    style="background: #4c86f9"
+                  ></span>
+                  <span
+                    class="w-[4px] h-[50px] animate-scale"
+                    style="background: #49a84c; animation-delay: -0.8s"
+                  ></span>
+                  <span
+                    class="w-[4px] h-[50px] animate-scale"
+                    style="background: #f6bb02; animation-delay: -0.7s"
+                  ></span>
+                  <span
+                    class="w-[4px] h-[50px] animate-scale"
+                    style="background: #f6bb02; animation-delay: -0.6s"
+                  ></span>
+                  <span
+                    class="w-[4px] h-[50px] animate-scale"
+                    style="background: #2196f3; animation-delay: -0.5s"
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div
+              id="show-container"
+              class="grid grid-cols-12 gap-6 mb-10"
+            ></div>
+            <div id="show-all" class="hidden text-center">
+              <button
+                class="px-6 py-2 rounded-lg bg-nu10 text-secondary1 font-semibold"
+              >
+                Show All
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <!-- You can open the modal using ID.showModal() method -->
+
+          <dialog id="details_popup" class="modal">
+            <div class="modal-box">
+              <form method="dialog">
+                <button
+                  class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-nu30"
+                >
+                  ✕
+                </button>
+              </form>
+              <div id="details-phone" class="grid grid-cols-12 gap-3"></div>
+            </div>
+          </dialog>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search item section end -->
+
+    <script src="./assets/js/plguins.js"></script>
+    <script src="./assets/js/plguins-custom.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </body>
+</html>
